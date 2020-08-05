@@ -17,13 +17,14 @@ jobs:
       name: dev-job-1
       script: echo "this is dev-job-1"
 
-      name: dev-job-2
       script: echo "this is dev-job-2"
+      name: dev-job-2
     
 
     - stage: prod
       name: prod-job-1
       script: echo "this is prod-job-1"
 
-      name: prod-job-2
+      
       script: echo "this is prod-job-2"
+      name: prod-job-2

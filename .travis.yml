@@ -7,24 +7,21 @@ stage:
   - prod
 
 branches:
-   only:
+  only:
     - backup
-
 
 jobs:
   include:
     - stage: dev
-      name: dev-job-1
-      script: echo "this is dev-job-1"
-
-      script: echo "this is dev-job-2"
-      name: dev-job-2
-    
-
-    - stage: prod
-      name: prod-job-1
-      script: echo "this is prod-job-1"
-
+      name: "test1"
+      script: echo "hello world from dev11"
       
-      script: echo "this is prod-job-2"
-      name: prod-job-2
+    - script: echo "hello world from dev22"
+      name: test2     
+    
+    - stage: prod
+      name: test1
+      script: echo "hello world from prod11"
+      
+    - script: echo "hello world from prod22"
+      name: test2

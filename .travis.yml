@@ -1,6 +1,6 @@
-language: java
-jdk:
-  - openjdk8
+language: python
+python:
+  - "3.5"
 
 stage:
   - dev
